@@ -212,6 +212,7 @@ export const updateUser = asyncHandler(async (req, res) => {
 // login status
 export const userLoginStatus = asyncHandler(async (req, res) => {
   const token = req.cookies.token;
+  console.log({token});
 
   if (!token) {
     // 401 Unauthorized
